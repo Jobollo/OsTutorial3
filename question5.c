@@ -4,8 +4,8 @@
 
 struct grade
 {
-	int mark;
-	int student_id;
+	int mark[];
+	int student_id[];
 };
 
 void grade_students(int grades, int num_students)
@@ -24,16 +24,25 @@ int main(void)
 	
 
 
-	printf("Professor, Pelase enter your name: ");
+	printf("Professor, Please enter your name: ");
 	scanf("%s", professor);
 	
 	printf("Professors name: %s \n",professor);
-	printf("Number of students to mark?: ");
+	printf("Number of students to mark: ");
 	scanf("%d", &num_students);
 	printf("Number of students to mark: %d \n", num_students);
 		
-	int *student_id = malloc(num_students);
-	int *grades = malloc(num_students);
+	int *grade = malloc(num_students);
+
+
+	for (int 1 = 0; i<num_students; i++)
+	{
+		printf("Enter student id: \n");
+		scanf("%d", grade.student_id[num_students]);
+		printf("Enter student grade: \n");
+		scanf("%d", grade.mark[num_students]);	
+	}	
+
 	free(professor);
 	free(student_id);
 	free(grades);
