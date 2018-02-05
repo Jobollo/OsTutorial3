@@ -7,6 +7,11 @@ int main(void)
     int numbers[10];
     FILE *q2file;
     q2file = fopen("question2.txt", "r");
+    if (q2file == NULL)
+    {
+        printf("Error: Could not read or find question2.txt\n");
+        exit(1);
+    }
     int num = 0;
     int n = 0;
     //fscanf (q2file, "%d", &num);
