@@ -25,9 +25,9 @@ void grade_students(struct grade *grades, int num_students)
 		stddev = sqrt(variance);
 			
 	}
-	fprintf(file, "%d\n", sum);
-	fprintf(file, "%.2f\n", avg);
-	fprintf(file, "%.2f\n", stddev);
+	fprintf(file, "Sum: %d\n", sum);
+	fprintf(file, "Average: %.2f\n", avg);
+	fprintf(file, "Standard Deviation: %.2f\n", stddev);
 	fclose(file);
 }
 
