@@ -44,7 +44,7 @@ int main(void)
 	printf("Number of students to mark: ");
 	scanf("%d", &num_students);
 	printf("Number of students to mark: %d \n", num_students);
-	struct grade *grades = malloc(num_students);
+	struct grade *grades = malloc(sizeof(struct grade) * num_students);
 
 	for (int i = 0; i<num_students; i++)
 	{
